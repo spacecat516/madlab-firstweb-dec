@@ -1,0 +1,129 @@
+header {
+  background-color: #9932CC;
+}
+
+main {
+  background-color:#FFFFF0;
+}
+
+footer {
+  background-color: #9932CC;
+}
+
+aside {
+  background-color: rgb(64, 29, 74);
+}
+
+nav {
+  background-color: rgb(195, 162, 200);
+}
+
+body 
+html {
+margin: 0;
+height: 100%;
+}
+
+.animated-bg {
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 1em;
+background: linear-gradient(-45deg, #f75bd0, #8850e3, #f011ad, #5e0473);
+background-size: 400% 400%;
+animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/*-------------- GRID LAYOUT -------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+}
+
+nav {
+    grid-column: 1/13;
+ 
+
+}
+
+header {
+  grid-column: 1 / 13;
+}
+main {
+  grid-column: 1 / span 13 ;}
+}
+
+aside {
+  grid-column: 9 / span 12;
+}
+footer {
+  grid-column: 1 / 13;
+}
+
+/* set image to size of container */
+
+.img1 {
+  width: 360px;
+  height: 360px;
+}
+
+.img2 {
+  width: 360px;
+  height: 360px;
+}
+.img3 {
+  width: 360px;
+  height: 360px;
+}
+
+/*-------------- MAIN GRID LAYOUT -------------*/
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-container > p {
+  grid-column: 1/4;
+  background-color: rgb(226, 148, 207);
+}
+
+
+/*-------------- MEDIA QUERIES -------------*/
+/*styling for mobile screens*/
+@media screen and (max-width: 600px) {
+  main,
+  aside {
+    grid-column: 1/ 13;
+  }
+
+  .main-container > p, .main-container section {
+    grid-column: 1/4;
+  }
+}
+
+
+/*===================== JAVASCRIPT =========================*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+
+.hide {
+  display:none;
+}
+
