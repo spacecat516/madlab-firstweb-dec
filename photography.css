@@ -31,7 +31,7 @@ justify-content: center;
 align-items: center;
 color: white;
 font-size: 1em;
-background: linear-gradient(-45deg, #f8eff6, #0f94e6, #70a6e5, #95edf0);
+background: linear-gradient(-45deg, #1b0a5b, #0f94e6, #70a6e5, #95edf0);
 background-size: 400% 400%;
 animation: gradientMove 15s ease infinite;
 }
@@ -82,6 +82,14 @@ footer {
 .img3 {
   width: 360px;
   height: 360px;
+}
+
+.boxes {
+  border-style: solid;
+  border-color: #2115cb;
+  text-align: center;
+  color: antiquewhite;
+  background-color: #1b0a5b;
 }
 
 /*-------------- MAIN GRID LAYOUT -------------*/

@@ -84,6 +84,14 @@ footer {
   height: 360px;
 }
 
+.boxes {
+  border-style: solid;
+  border-color: #f12feb;
+  text-align: center;
+  background-color: rgb(202, 185, 240);
+}
+
+
 /*-------------- MAIN GRID LAYOUT -------------*/
 
 .main-container {
@@ -93,7 +101,7 @@ footer {
 
 .main-container > p {
   grid-column: 1/4;
-  background-color: rgb(226, 148, 207);
+  background-color: rgb(237, 186, 224);
 }
 
 
