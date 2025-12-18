@@ -49,9 +49,28 @@ animation: gradientMove 15s ease infinite;
 }
 
 nav {
-    grid-column: 1/13;
- 
+  width: 100%;
+  padding: 1rem 5%;
+  background: #f09ee5;
+  border-bottom: 1px solid black;
+  backdrop-filter:blur(15px);
+  margin border-bottom:2rem;
 
+}
+
+.logo {
+  font-size:1.8rem;
+  font-weight:700;
+  color: antiquewhite;
+  letter-spacing: 1px;
+
+
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 2rem;
 }
 
 header {
